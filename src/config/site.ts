@@ -16,8 +16,8 @@ export const site: {
   storeEnabled: false,
   newsletterEnabled: false,
   newsletterUrl: null,
-  contactEmail: null,
-  legalBusinessName: "T & E LLC",
+  contactEmail: "admin@vieli.us",
+  legalBusinessName: "T & E Enterprises LLC",
   businessAddress: { street: "1401 21st ST", city: "Sacramento", region: "CA", zip: "95811", country: "United States" },
   socialLinks: [],
 };
@@ -29,6 +29,6 @@ export const pages = {
   "/about/": { title: "Our Story", description: "Explore the philosophy behind ViEli and its three pillars of movement, balance, and becoming." },
   "/journal/": { title: "Journal", description: "The ViEli journal will explore movement, mindfulness, and everyday rituals." },
   "/contact/": { title: "Contact", description: "Find contact information and the business mailing address for ViEli." },
-  "/privacy/": { title: "Privacy Policy", description: "Read ViEli’s draft website privacy policy." },
-  "/terms/": { title: "Terms of Use", description: "Read ViEli’s draft website terms of use." },
+  "/privacy/": { title: "Privacy Policy", description: "Learn how ViEli handles website visits, email correspondence, and personal information." },
+  "/terms/": { title: "Terms of Use", description: "Read the terms governing your use of the ViEli website." },
 } as const;
