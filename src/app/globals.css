@@ -50,7 +50,7 @@ a, summary { -webkit-tap-highlight-color: transparent; }
 
 .site-header { border-bottom: 1px solid var(--color-line); }
 .header-inner { min-height: 5rem; display: flex; align-items: center; justify-content: space-between; }
-.brand-name { font-size: 1.25rem; font-weight: 650; }
+.brand-name { display: inline-flex; align-items: center; flex-shrink: 0; }\n.brand-name img { display: block; width: 4.8rem; height: 4.8rem; object-fit: contain; }\n.footer-grid .brand-name img { width: 5.75rem; height: 5.75rem; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(1rem, 3vw, 3.25rem); font-size: .83rem; }
 .site-header nav a:hover, .site-footer a:hover { text-decoration: underline; text-underline-offset: .3em; }
 .mobile-nav { display: none; position: relative; z-index: 2; }
@@ -98,10 +98,10 @@ a, summary { -webkit-tap-highlight-color: transparent; }
   justify-items: center;
   gap: .9rem;
   overflow: hidden;
-  background: #e7ddcf;
+  background: #eee6dd;
   color: #4e4b40;
 }
-.panel-frame { position: absolute; inset: 5%; z-index: -1; border: 1px solid #a69a8780; }
+.hero-logo { width: min(92%, 34rem); height: auto; display: block; }\n.panel-frame { position: absolute; inset: 5%; z-index: -1; border: 1px solid #a69a8780; }
 .panel-orbit {
   position: absolute;
   inset: 12% 24%;
@@ -149,7 +149,7 @@ a, summary { -webkit-tap-highlight-color: transparent; }
 
 @media (max-width: 48rem) {
   .hero { grid-template-columns: 1fr; }
-  .hero-panel { aspect-ratio: 1.23; }
+  .hero-panel { aspect-ratio: 1.23; }\n  .header-inner { min-height: 4.5rem; }\n  .brand-name img { width: 4rem; height: 4rem; }
   .desktop-nav { display: none; }
   .mobile-nav { display: block; }
   .collection { grid-template-columns: 1fr; }
