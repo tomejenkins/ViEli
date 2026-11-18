@@ -47,7 +47,7 @@ export function Footer() {
             <Link href="/privacy/">Privacy Policy</Link>
             <Link href="/terms/">Terms of Use</Link>
           </nav>
-          <div><p>ViEli is a brand operated by {site.legalBusinessName}.</p><Address /></div>
+          <div><p>ViEli is a brand operated by {site.legalBusinessName}.</p><p><a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a></p><Address /></div>
         </div>
         <div className="footer-end">
           <small>© {new Date().getUTCFullYear()} {site.legalBusinessName}. All rights reserved.</small>
