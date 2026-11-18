@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { ReactNode } from "react";
 import { pages, site, tagline } from "@/config/site";
 
@@ -20,7 +21,7 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="shell header-inner">
-        <Link className="brand-name" href="/" aria-label="ViEli home">{site.siteName}</Link>
+        <Link className="brand-name" href="/" aria-label="ViEli home"><Image src="/brand/vieli-logo.svg" alt="ViEli" width={84} height={84} priority /></Link>
         <nav className="desktop-nav" aria-label="Main"><NavigationLinks /></nav>
         <details className="mobile-nav">
           <summary>Menu</summary>
@@ -41,7 +42,7 @@ export function Footer() {
     <footer className="site-footer">
       <div className="shell">
         <div className="footer-grid">
-          <div><Link href="/" className="brand-name">{site.siteName}</Link><p className="eyebrow">{tagline}</p></div>
+          <div><Link href="/" className="brand-name" aria-label="ViEli home"><Image src="/brand/vieli-logo.svg" alt="ViEli" width={92} height={92} /></Link><p className="eyebrow">{tagline}</p></div>
           <nav aria-label="Footer">
             <NavigationLinks />
             <Link href="/privacy/">Privacy Policy</Link>
