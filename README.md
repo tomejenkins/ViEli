@@ -1,6 +1,6 @@
 # ViEli
 
-ViEli is the static brand website for T & E LLC. It introduces the brand and its approach to movement and wellbeing ahead of the store launch.
+ViEli is the static brand website for T & E Enterprises LLC. It introduces the brand and its approach to movement and wellbeing ahead of the store launch.
 
 ## Local development
 
@@ -23,9 +23,9 @@ The production build writes static files to `out/`. To test that export locally,
 
 ## Site settings
 
-Edit [src/config/site.ts](src/config/site.ts) to configure the verified contact email, social links, and launch flags. Enable `storeEnabled` after the storefront at `https://shop.vieli.us` is ready. Enable `newsletterEnabled` alongside an approved hosted signup URL in `newsletterUrl`. Changes take effect after rebuilding the site. The site does not collect addresses directly.
+Edit [src/config/site.ts](src/config/site.ts) to configure social links and launch flags. General inquiries use `mailto:admin@vieli.us`; verify that this mailbox is provisioned and receives mail. Enable `storeEnabled` after the storefront at `https://shop.vieli.us` is ready. Enable `newsletterEnabled` alongside an approved hosted signup URL in `newsletterUrl`. Changes take effect after rebuilding the site. The site does not collect addresses directly.
 
-The hero and navigation currently show the plain-text brand name. Put the approved original artwork in `public/brand/` when available. Use that original to prepare proportion-preserving web assets, approved favicon artwork, and a social sharing image before launch. The journal registry lives in `src/config/journal.ts`. Create corresponding article pages before adding approved entries.
+The header, footer, hero, and favicon use `public/brand/vieli-logo.svg`, a transparent-background vector trace of the supplied ViEli logo. Retain the original approved high-resolution source for future branding and verify the traced artwork visually. The journal registry lives in `src/config/journal.ts`. Create corresponding article pages before adding approved entries. The journal registry lives in `src/config/journal.ts`. Create corresponding article pages before adding approved entries.
 
 ## Deploy
 
@@ -35,9 +35,9 @@ The hero and navigation currently show the plain-text brand name. Put the approv
 
 ## Prelaunch checklist
 
-- [ ] Integrate the approved logo, favicon, and social sharing image. Verify the logo’s proportions and social preview.
-- [ ] Review and approve privacy and terms with the actual hosting and integration details. Remove the draft notices, remove the policy pages’ noindex metadata, and add the finalized URLs to the sitemap.
-- [ ] Verify the business address and confirm the contact email or keep the mailing address fallback.
+- [ ] Approve the traced logo treatment against the original and supply an approved dedicated social sharing image.
+- [ ] Review and approve Privacy Policy and Terms of Use against actual hosting, security, analytics, and email configuration; currently included in the sitemap and indexable. Obtain professional legal review as appropriate.
+- [ ] Verify the business address and confirm `admin@vieli.us` can receive messages.
 - [ ] Leave store and newsletter features disabled until their destinations are approved and tested.
 - [ ] Run lint, type checks, and production build. Check the exported site on mobile and desktop with keyboard navigation and run Lighthouse against the deployed preview.
 - [ ] Validate HTTPS, canonical URLs, robots.txt, sitemap.xml, and the production domain.
