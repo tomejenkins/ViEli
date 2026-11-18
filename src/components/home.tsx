@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { site, tagline } from "@/config/site";
+import Image from "next/image";
+import { site } from "@/config/site";
 
 const pillars = [
   { title: "Move", description: "Explore strength, mobility, and purposeful movement." },
