@@ -28,11 +28,7 @@ export function Hero() {
       </div>
     </div>
     <div className="hero-panel">
-      <div className="panel-frame" />
-      <div className="panel-orbit" />
-      <div className="panel-orbit panel-orbit-cross" />
-      <p className="panel-brand">{site.siteName}</p>
-      <p className="panel-tagline eyebrow">{tagline}</p>
+      <Image className="hero-logo" src="/brand/vieli-logo.svg" alt="ViEli — Move · Balance · Become" width={540} height={540} priority />
     </div>
   </section>;
 }
